@@ -9,26 +9,25 @@ The implementation also uses multi-threading to speed up the blurring operation 
 
 ## Dependencies
 This implementation requires the following dependencies:
-
-## C++ 11 or higher
-Visual Studio 2019
+### C++ 11 or higher
+### Visual Studio 2019
 
 ## Usage
 To use this implementation of the Gaussian blur filter, you can follow these steps:
 
 Clone the repository or download the source code files.
-Make sure you are running VS2019.(Not tested with any other versions)
+Make sure you are running VS2019.(Not tested with any other versions).
 You can build the .sln project file directly through VS2019.
 To run the code make sure to provide the command line arguments from Debugging Options in Project properties
 The project file contains an Images folder with the Image to be blurred , provide the entire path of the image , output path/filename.tga and sigma value for standard deviation.
 
-Format :
+### Format :
 path\ImageBlur\Images\Sharmob.tga path\ImageBlur\Images\SharmobBlur.tga 0-1 (sigma value).
 Alternatively can run the RunImageBlurExe.bat with similar args this runs the executable file, providing the input and output image file paths, and the sigma value for the Gaussian kernel.
 
 
 ### Files
-main.cpp: The main file that reads the input image, applies the Gaussian blur filter, and writes the output image.
+ImageBlur.cpp: The main file that reads the input image, applies the Gaussian blur filter, and writes the output image.
 
 ImageReaderWriterTGA.h and ImageReaderWriterTGA.cpp:A class that provides functionality for reading and writing TGA image files.
 
